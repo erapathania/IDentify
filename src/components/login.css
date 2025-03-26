@@ -1,0 +1,109 @@
+/* Background Image Styling */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../public/bg.png'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Aligned to the right */
+  display: flex;
+  gap: 10px;
+}
+
+.app-title {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #e53935;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  background-color: #e53935;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #c62828;
+}
+
+/* Summary Styling */
+.summary {
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 60%; /* Adjusted width */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login Box Styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Input Styling */
+input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+.continue-btn {
+  background-color: #ff5252; /* Changed to red */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.continue-btn:hover {
+  background-color: #e53935;
+}
+
+
+
