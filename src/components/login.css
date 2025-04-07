@@ -1,37 +1,43 @@
-/* Background Image Styling */
+/* Fullscreen Background */
 .login-container {
   height: 100vh;
   width: 100vw;
-  background-image: url('../../public/bg.png'); /* Ensure the path is correct */
+  background: url('../../public/bg.png') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 20px;
-}
-
-/* Navigation Bar Styling */
-.navbar {
-  position: absolute;
-  top: 20px;
-  right: 20px; /* Aligned to the right */
-  display: flex;
-  gap: 10px;
-}
-
-.app-title {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  font-size: 48px;
-  font-weight: bold;
-  color: #e53935;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   font-family: 'Poppins', sans-serif;
 }
 
+/* Top Bar */
+.top-bar {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+
+/* Centered App Title */
+.app-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #e53935;
+  text-align: center;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navigation Buttons */
 .nav-buttons {
   display: flex;
   gap: 10px;
@@ -39,71 +45,58 @@
 
 .nav-buttons button {
   background-color: #e53935;
-  color: #fff;
-  padding: 10px 20px;
+  color: white;
+  padding: 10px 16px;
   border: none;
+  border-radius: 6px;
+  font-size: 15px;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: background 0.3s ease;
 }
 
 .nav-buttons button:hover {
   background-color: #c62828;
 }
 
-/* Summary Styling */
-.summary {
-  color: #333;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 20px;
-  width: 60%; /* Adjusted width */
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Login Box Styling */
+/* Login Box */
 .login-box {
-  background: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.96);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 340px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 350px;
 }
 
-h2 {
-  font-size: 28px;
+/* Headings */
+.login-box h2 {
+  font-size: 26px;
   color: #444;
-  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
 }
 
-/* Input Styling */
-input {
-  width: calc(100% - 20px);
+/* Inputs */
+.login-box input {
+  width: 90%;
   padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin: 8px 0;
   font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-/* Button Styling */
+/* Proceed / OTP Buttons */
 .continue-btn {
-  background-color: #ff5252; /* Changed to red */
+  width: 100%;
+  background-color: #e53935;
   color: white;
   padding: 12px;
-  border: none;
-  border-radius: 5px;
   font-size: 16px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
-  width: 100%;
+  margin-top: 10px;
 }
 
 .continue-btn:hover {
-  background-color: #e53935;
+  background-color: #d32f2f;
 }
-
-
-

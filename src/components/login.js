@@ -28,30 +28,22 @@ const Login = () => {
     }
   };
 
+  const handleAbout = () => {
+    alert(
+      `Identify is a secure authentication system with OTP verification for enhanced security.\n\nIt helps protect user data and provides a safe and seamless login experience.`
+    );
+  };
+
   return (
     <div className="login-container">
-      {/* Navigation */}
-      <div className="navbar">
+      <div className="top-bar">
         <h1 className="app-title">Identify</h1>
         <div className="nav-buttons">
-          <button onClick={() => alert('Welcome to the Home Page!')}>
-            Home
-          </button>
-          <button onClick={() => alert('About Identify App: This is a secure login system.')}>
-            About
-          </button>
+          <button onClick={() => alert('Welcome to Home!')}>Home</button>
+          <button onClick={handleAbout}>About</button>
         </div>
       </div>
 
-      {/* Summary */}
-      <div className="summary">
-        <p>
-          <strong>Identify</strong> is a secure authentication system with OTP verification for enhanced security.
-          It helps protect user data and provides a safe and seamless login experience.
-        </p>
-      </div>
-
-      {/* Login Box */}
       <div className="login-box">
         <h2>Welcome Back!</h2>
         {!showOtpField ? (
